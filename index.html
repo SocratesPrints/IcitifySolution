@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Oseni Samuel - Portfolio</title>
+      <!-- Tailwind CSS -->
+      <script src="https://cdn.tailwindcss.com"></script>
+      <!-- Google Fonts -->
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+      <!-- Font Awesome for Icons -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+      <!-- Custom Stylesheet -->
+      <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+      <!-- Sidebar -->
+      <div id="sidebar" class="sidebar">
+        <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
+        <a href="#home" onclick="closeNav()">Home</a>
+        <a href="#about" onclick="closeNav()">About</a>
+        <a href="#works" onclick="closeNav()">Works</a>
+        <a href="#testimonials" onclick="closeNav()">Testimonials</a>
+        <a href="#contact" onclick="closeNav()">Contact</a>
+      </div>
+
+        <!-- Overlay when sidebar is open -->
+        <div id="overlay" class="overlay" onclick="closeNav()"></div>
+
+        <!-- Hamburger Menu Button -->
+        <span class="menu-btn" onclick="openNav()">&#9776;</span>
+
+        <!-- Main Content -->
+        <div id="main-content" class="main-content">
+            <!-- Home Section -->
+            <section id="home" class="section text-center bg-gray-100 dark:bg-gray-900">
+                <img src="https://placehold.co/150x150/4B5563/FFFFFF?text=OS" alt="Oseni Samuel" class="rounded-full mx-auto mb-4 w-40 h-40 object-cover shadow-lg">
+                <h1 class="text-4xl md:text-6xl font-bold text-gray-800 dark:text-white">Oseni Samuel</h1>
+                <p class="mt-4 text-lg md:text-xl text-gray-600 dark:text-gray-300">Web Developer | Graphics Designer | Educational Consultant</p>
+            </section>
+
+            <!-- About Section -->
+            <section id="about" class="section bg-white dark:bg-gray-800">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h2 class="text-3xl font-bold mb-6">About Me</h2>
+                    <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+                        I am a multi-talented professional with a passion for creating beautiful and functional digital experiences. With a strong background in web development, I build modern, responsive websites that help businesses grow. As a graphics designer, I bring ideas to life with visually compelling designs. Furthermore, my experience as an educational consultant allows me to provide valuable insights and guidance to individuals and organizations in the education sector. I am dedicated to delivering high-quality work and exceeding client expectations.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Works Section -->
+            <section id="works" class="section bg-gray-100 dark:bg-gray-900">
+                <div class="max-w-6xl mx-auto">
+                    <h2 class="text-3xl font-bold text-center mb-8">My Works</h2>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Project 1 -->
+                        <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden">
+                            <img src="https://placehold.co/600x400/3B82F6/FFFFFF?text=Project+One" alt="Project One" class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold mb-2">E-commerce Website</h3>
+                                <p class="text-gray-600 dark:text-gray-300 mb-4">A fully functional e-commerce platform with a clean user interface and secure payment gateway.</p>
+                                <a href="#" class="text-blue-500 hover:underline">View Project</a>
+                            </div>
+                        </div>
+                        <!-- Project 2 -->
+                        <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden">
+                            <img src="https://placehold.co/600x400/10B981/FFFFFF?text=Project+Two" alt="Project Two" class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold mb-2">Branding Identity</h3>
+                                <p class="text-gray-600 dark:text-gray-300 mb-4">Complete branding package for a startup, including logo design, color palette, and typography.</p>
+                                <a href="#" class="text-green-500 hover:underline">View Project</a>
+                            </div>
+                        </div>
+                        <!-- Project 3 -->
+                        <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden">
+                            <img src="https://placehold.co/600x400/F59E0B/FFFFFF?text=Project+Three" alt="Project Three" class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold mb-2">Educational Portal</h3>
+                                <p class="text-gray-600 dark:text-gray-300 mb-4">An online portal for students to access course materials, submit assignments, and interact with teachers.</p>
+                                <a href="#" class="text-yellow-500 hover:underline">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Testimonials Section -->
+            <section id="testimonials" class="section bg-white dark:bg-gray-800">
+                <div class="max-w-4xl mx-auto">
+                    <h2 class="text-3xl font-bold text-center mb-8">What Clients Say</h2>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <!-- Testimonial 1 -->
+                        <div class="bg-gray-100 dark:bg-gray-700 p-6 rounded-lg shadow">
+                            <p class="text-gray-600 dark:text-gray-300">"Oseni Samuel is a true professional. He delivered a stunning website for my business that has significantly improved my online presence. Highly recommended!"</p>
+                            <p class="mt-4 font-bold text-right">- John Doe, CEO of Example Inc.</p>
+                        </div>
+                        <!-- Testimonial 2 -->
+                        <div class="bg-gray-100 dark:bg-gray-700 p-6 rounded-lg shadow">
+                            <p class="text-gray-600 dark:text-gray-300">"The logo and branding materials Oseni designed for us were exceptional. He has a great eye for detail and perfectly captured our brand's essence."</p>
+                            <p class="mt-4 font-bold text-right">- Jane Smith, Founder of Creative Co.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="section bg-gray-100 dark:bg-gray-900">
+                <div class="max-w-lg mx-auto text-center">
+                    <h2 class="text-3xl font-bold mb-6">Get In Touch</h2>
+                    <p class="text-gray-600 dark:text-gray-300 mb-8">
+                        I'm currently available for freelance work. If you have a project in mind or just want to say hello, feel free to reach out.
+                    </p>
+                    <div class="space-y-4">
+                        <p><i class="fas fa-phone mr-2"></i>+234 810 701 2421</p>
+                        <p>
+                            <i class="fab fa-whatsapp mr-2"></i>
+                            <a id="whatsapp-link" href="https://wa.me/2348107012421" target="_blank" class="text-green-500 hover:underline">WhatsApp</a>
+                            <span class="editable-link ml-2" onclick="editLink('whatsapp-link', 'https://wa.me/')">[edit]</span>
+                        </p>
+                        <p>
+                            <i class="fab fa-facebook mr-2"></i>
+                            <a id="facebook-link" href="https://facebook.com/yourprofile" target="_blank" class="text-blue-600 hover:underline">Facebook</a>
+                            <span class="editable-link ml-2" onclick="editLink('facebook-link', 'https://facebook.com/')">[edit]</span>
+                        </p>
+                        <p>
+                            <i class="fab fa-twitter mr-2"></i>
+                            <a id="x-link" href="https://twitter.com/yourprofile" target="_blank" class="text-blue-400 hover:underline">X (Twitter)</a>
+                            <span class="editable-link ml-2" onclick="editLink('x-link', 'https://twitter.com/')">[edit]</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Custom JavaScript -->
+        <script src="script.js"></script>
+
+    </body>
+</html>
