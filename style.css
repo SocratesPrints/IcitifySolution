@@ -1,39 +1,35 @@
-/* Custom CSS for the portfolio */
-
-/* Base body styles */
 body {
     font-family: 'Inter', sans-serif;
     scroll-behavior: smooth;
 }
 
-/* Sidebar Styles */
 .sidebar {
     position: fixed;
     top: 0;
-    left: -250px; /* Hidden by default */
+    left: -250px; 
     width: 250px;
     height: 100%;
-    background-color: #1f2937; /* dark-gray-800 */
+    background-color: #1f2937;
     padding-top: 60px;
     transition: left 0.3s ease-in-out;
     z-index: 50;
 }
 
 .sidebar.open {
-    left: 0; /* Shown when open */
+    left: 0; 
 }
 
 .sidebar a {
     padding: 15px 20px;
     text-decoration: none;
     font-size: 18px;
-    color: #d1d5db; /* gray-300 */
+    color: #d1d5db; 
     display: block;
     transition: background-color 0.3s ease;
 }
 
 .sidebar a:hover {
-    background-color: #374151; /* dark-gray-700 */
+    background-color: #374151;
     color: white;
 }
 
@@ -42,17 +38,16 @@ body {
     top: 15px;
     right: 25px;
     font-size: 36px;
-    color: #d1d5db; /* gray-300 */
+    color: #d1d5db;
 }
 
-/* Main content area that gets pushed */
+
 .main-content {
     transition: margin-left 0.3s ease;
     padding: 20px;
     margin-left: 0;
 }
 
-/* Hamburger Menu Button */
 .menu-btn {
     position: fixed;
     top: 15px;
@@ -66,7 +61,7 @@ body {
     border-radius: 8px;
 }
 
-/* Styles for each major section */
+
 .section {
     min-height: 100vh;
     display: flex;
@@ -76,14 +71,13 @@ body {
     padding: 80px 20px;
 }
 
-/* Style for the editable link markers */
 .editable-link {
     cursor: pointer;
     text-decoration: underline;
-    color: #3b82f6; /* blue-500 */
+    color: #3b82f6;
 }
 
-/* Overlay to darken the page when sidebar is open */
+
 .overlay {
     position: fixed;
     top: 0;
@@ -92,9 +86,9 @@ body {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 45;
-    display: none; /* Hidden by default */
+    display: none; 
 }
 
 .overlay.show {
-    display: block; /* Shown with sidebar */
+    display: block; 
 }

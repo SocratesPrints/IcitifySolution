@@ -4,18 +4,18 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Oseni Samuel - Portfolio</title>
-      <!-- Tailwind CSS -->
+      
       <script src="https://cdn.tailwindcss.com"></script>
-      <!-- Google Fonts -->
+      
       <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-      <!-- Font Awesome for Icons -->
+      
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-      <!-- Custom Stylesheet -->
+      
       <link rel="stylesheet" href="style.css">
     </head>
 
     <body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
-      <!-- Sidebar -->
+     
       <div id="sidebar" class="sidebar">
         <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
         <a href="#home" onclick="closeNav()">Home</a>
@@ -25,15 +25,15 @@
         <a href="#contact" onclick="closeNav()">Contact</a>
       </div>
 
-        <!-- Overlay when sidebar is open -->
+       
         <div id="overlay" class="overlay" onclick="closeNav()"></div>
 
-        <!-- Hamburger Menu Button -->
+        
         <span class="menu-btn" onclick="openNav()">&#9776;</span>
 
-        <!-- Main Content -->
+        
         <div id="main-content" class="main-content">
-            <!-- Home Section -->
+            
             <section id="home" class="section text-center bg-gray-100 dark:bg-gray-900">
                 <img src="https://placehold.co/150x150/4B5563/FFFFFF?text=OS" alt="Oseni Samuel" class="rounded-full mx-auto mb-4 w-40 h-40 object-cover shadow-lg">
                 <h1 class="text-4xl md:text-6xl font-bold text-gray-800 dark:text-white">Oseni Samuel</h1>
@@ -117,24 +117,21 @@
                         <p>
                             <i class="fab fa-whatsapp mr-2"></i>
                             <a id="whatsapp-link" href="https://wa.me/2348107012421" target="_blank" class="text-green-500 hover:underline">WhatsApp</a>
-                            <span class="editable-link ml-2" onclick="editLink('whatsapp-link', 'https://wa.me/')">[edit]</span>
                         </p>
                         <p>
                             <i class="fab fa-facebook mr-2"></i>
-                            <a id="facebook-link" href="https://facebook.com/yourprofile" target="_blank" class="text-blue-600 hover:underline">Facebook</a>
-                            <span class="editable-link ml-2" onclick="editLink('facebook-link', 'https://facebook.com/')">[edit]</span>
+                            <a id="facebook-link" href="https://facebook.com" target="_blank" class="text-blue-600 hover:underline">Facebook</a>
                         </p>
                         <p>
                             <i class="fab fa-twitter mr-2"></i>
-                            <a id="x-link" href="https://twitter.com/yourprofile" target="_blank" class="text-blue-400 hover:underline">X (Twitter)</a>
-                            <span class="editable-link ml-2" onclick="editLink('x-link', 'https://twitter.com/')">[edit]</span>
+                            <a id="x-link" href="https://twitter.com" target="_blank" class="text-blue-400 hover:underline">X (Twitter)</a>
                         </p>
                     </div>
                 </div>
             </section>
         </div>
 
-        <!-- Custom JavaScript -->
+        
         <script src="script.js"></script>
 
     </body>
